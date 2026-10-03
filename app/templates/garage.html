@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garage · CarDocs</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-page="garage">
+  <header class="top">
+    <a class="brand" href="/garage">Car<span>Docs</span></a>
+    <div class="who"><span id="who"></span><button id="logout" class="secondary small" type="button">Cerrar sesión</button></div>
+  </header>
+  <main>
+    <div class="toolbar">
+      <h1 id="title" style="margin:0">Mi garage</h1>
+      <div class="row" style="align-items:center">
+        <span id="expired-total" class="badge vigente"></span>
+        <a id="new-car" class="btn" href="/vehicles/new">Nuevo auto</a>
+      </div>
+    </div>
+    <div id="error" class="error" role="alert"></div>
+    <div id="cars" class="grid"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

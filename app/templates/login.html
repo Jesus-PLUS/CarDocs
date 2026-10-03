@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · CarDocs</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-page="login">
+  <main class="narrow">
+    <div class="card">
+      <h1>Iniciar sesión</h1>
+      <div id="error" class="error" role="alert"></div>
+      <form id="auth-form">
+        <label>Email <input name="email" type="text" inputmode="email" required autocomplete="username"></label>
+        <label>Contraseña <input name="password" type="password" required autocomplete="current-password"></label>
+        <button type="submit">Entrar</button>
+      </form>
+      <p class="foot">¿No tienes cuenta? <a href="/register">Regístrate</a></p>
+    </div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

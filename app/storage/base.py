@@ -1,0 +1,9 @@
+from typing import BinaryIO, Protocol
+
+
+class StorageAdapter(Protocol):
+    def save(self, key: str, file: BinaryIO) -> str: ...
+
+    def open(self, key: str) -> BinaryIO: ...
+
+    def delete(self, key: str) -> None: ...

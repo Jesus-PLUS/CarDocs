@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · CarDocs</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-page="register">
+  <main class="narrow">
+    <div class="card">
+      <h1>Crear cuenta</h1>
+      <div id="error" class="error" role="alert"></div>
+      <form id="auth-form">
+        <label>Email <input name="email" type="text" inputmode="email" required autocomplete="username"></label>
+        <label>Contraseña (mínimo 8 caracteres) <input name="password" type="password" required minlength="8" autocomplete="new-password"></label>
+        <label>Soy
+          <select name="role">
+            <option value="dueño">Dueño de auto</option>
+            <option value="taller">Taller</option>
+          </select>
+        </label>
+        <button type="submit">Registrarme</button>
+      </form>
+      <p class="foot">¿Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
+    </div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

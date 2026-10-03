@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuevo auto · CarDocs</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-page="vehicle-new">
+  <header class="top">
+    <a class="brand" href="/garage">Car<span>Docs</span></a>
+    <div class="who"><span id="who"></span><button id="logout" class="secondary small" type="button">Cerrar sesión</button></div>
+  </header>
+  <main class="narrow" style="margin-top:1.5rem">
+    <div class="card">
+      <h1>Nuevo auto</h1>
+      <div id="error" class="error" role="alert"></div>
+      <form id="vehicle-form">
+        <label>Placas <input name="plates" required maxlength="15" placeholder="QRO-123-A"></label>
+        <label>Marca <input name="brand" required maxlength="60"></label>
+        <label>Modelo <input name="model" required maxlength="60"></label>
+        <label>Año <input name="year" type="number" required min="1980" max="2100"></label>
+        <button type="submit">Guardar</button>
+        <a class="btn secondary" href="/garage">Cancelar</a>
+      </form>
+    </div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
